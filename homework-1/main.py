@@ -4,6 +4,9 @@ import csv
 
 
 def file_reader(path):
+    """
+    Функция для открытия файла csv и возвращения списка данных
+    """
     with open(path, "r") as file:
         csv_reader = csv.reader(file)
         count = 0
